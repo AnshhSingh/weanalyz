@@ -21,6 +21,8 @@ import OrganizerUserProfile from "./components/OrganizerUserProfile";
 import TechnicalUserProfile from "./components/TechnicalUserProfile";
 import EditProfile from "./components/EditProfile";
 import ProtectedRoute from "./components/ProtectedRoute";
+import SignUp from "./components/SignUp";
+import ForgotPassword from "./components/ForgotPassword";
 import "./App.css";
 import { FaTachometerAlt, FaDatabase, FaCog, FaHistory, FaTicketAlt, FaClipboardList, FaChartLine } from "react-icons/fa";
 
@@ -54,6 +56,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/forgot-password" element={<ForgotPassword />} />
       <Route path="/dashboard" element={
         <ProtectedRoute allowedRoles={["user"]}>
           <Dashboard />

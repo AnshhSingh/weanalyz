@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Layout from "./Layout";
 import { FaTachometerAlt, FaClipboardList, FaChartLine } from "react-icons/fa";
 import "./MyTicket.css";

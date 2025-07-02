@@ -1,6 +1,6 @@
 import Layout from "./Layout";
 import { FaUser, FaTachometerAlt, FaDatabase, FaCog, FaHistory } from "react-icons/fa";
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Dashboard.css";
 
 const adminSidebar = [
