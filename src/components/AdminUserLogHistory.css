@@ -1,0 +1,81 @@
+.userlog-container {
+  background: none;
+  padding: 0 0 32px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.userlog-title {
+  font-size: 28px;
+  font-family: 'Sanchez', serif;
+  font-weight: 400;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  text-align: left;
+}
+.userlog-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 8px;
+  font-family: 'Sanchez', serif;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+.userlog-controls select {
+  background: #888;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 0.2rem 1.5rem 0.2rem 0.5rem;
+  font-family: 'Sanchez', serif;
+}
+.userlog-table-wrapper {
+  background: #fff;
+  border-radius: 4px;
+  margin: 0 8px 0 8px;
+  box-shadow: none;
+  overflow-x: auto;
+}
+.userlog-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  font-family: 'Sanchez', serif;
+}
+.userlog-table th, .userlog-table td {
+  padding: 8px 0;
+  text-align: center;
+}
+.userlog-table th {
+  font-weight: 400;
+  color: #222;
+  background: none;
+  border-bottom: 2px solid #888;
+}
+.odd-row {
+  background: #fff;
+}
+.even-row {
+  background: #e5e5e5;
+}
+.userlog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 8px 0 8px;
+  font-size: 16px;
+  font-family: 'Sanchez', serif;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 22px;
+  color: #444;
+}
+.pagination .active {
+  font-weight: 700;
+  text-decoration: underline;
+} 

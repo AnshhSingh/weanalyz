@@ -1,0 +1,63 @@
+/* Dashboard.css */
+
+.metrics-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.metric-card {
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+  box-shadow: 6px 8px 0px 0px #bdbdbd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s;
+}
+
+.metric-card.blue {
+  background: #2d7cff;
+  color: #003366;
+}
+.metric-card.green {
+  background: #00ff5b;
+  color: #003366;
+}
+.metric-card.red {
+  background: #ff5c5c;
+  color: #003366;
+}
+.metric-card.yellow {
+  background: #ffff70;
+  color: #003366;
+}
+
+.metric-title {
+  font-size: 22px;
+  font-family: 'Sanchez', serif;
+  font-weight: 400;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.metric-number {
+  font-size: 80px;
+  font-family: 'Sanchez', serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Sanchez', serif;
+  font-weight: 400;
+  margin-top: 32px;
+  margin-bottom: 0;
+} 

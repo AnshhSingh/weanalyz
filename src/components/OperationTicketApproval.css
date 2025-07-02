@@ -1,0 +1,165 @@
+/* OperationTicketApproval.css */
+
+.main-title {
+  text-align: left;
+  font-size: 28px;
+  font-family: 'Sanchez', serif;
+  font-weight: 400;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  margin-left: 12px;
+}
+
+.ticket-controls {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 10px;
+  margin-left: 12px;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  height: 32px;
+  width: 160px;
+  border-radius: 7px;
+  border: none;
+  background: #eaeaea;
+  font-size: 18px;
+  font-family: 'Sanchez', serif;
+  padding: 0 36px 0 12px;
+  outline: none;
+  box-shadow: 2px 2px 4px #ccc;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 22px;
+  color: #444;
+  pointer-events: none;
+}
+
+.entries-control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Sanchez', serif;
+  font-size: 16px;
+}
+
+.entries-control select {
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid #888;
+  background: #eaeaea;
+  font-size: 16px;
+  font-family: 'Sanchez', serif;
+  margin: 0 2px;
+  padding: 0 4px;
+}
+
+.ticket-table {
+  margin: 0 auto;
+  width: 97%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: none;
+  overflow-x: auto;
+}
+
+.ticket-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Sanchez', serif;
+  font-size: 18px;
+}
+
+.ticket-table th, .ticket-table td {
+  padding: 8px 0;
+  text-align: center;
+}
+
+.ticket-table th {
+  font-weight: 400;
+  color: #222;
+  background: none;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.ticket-table tr {
+  background: #f5f5f5;
+}
+
+.ticket-table tr:nth-child(even) {
+  background: #eaeaea;
+}
+
+.ticket-link {
+  color: #2d7cff;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.action-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.action-icon {
+  font-size: 22px;
+  color: #111;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 2px;
+  transition: color 0.2s;
+}
+.action-icon:hover {
+  color: #55d6c2;
+}
+
+.assign-dropdown {
+  background: #bbb;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 0.5rem;
+  min-width: 60px;
+  height: 32px;
+}
+.dropdown-icon {
+  color: #444;
+  font-size: 22px;
+  margin-left: 8px;
+}
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 32px 0 32px;
+  font-family: 'Sanchez', serif;
+  font-size: 15px;
+  color: #222;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 22px;
+  color: #444;
+}
+.pagination .active {
+  font-weight: 700;
+  text-decoration: underline;
+} 

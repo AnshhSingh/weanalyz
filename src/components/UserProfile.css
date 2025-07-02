@@ -1,0 +1,116 @@
+.user-profile-title {
+  text-align: left;
+  font-size: 26px;
+  font-family: 'Sanchez', serif;
+  font-weight: 400;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-left: 0;
+}
+.user-profile-bg {
+  background: #7be0d6;
+  border-radius: 0;
+  padding: 32px 0 32px 0;
+  min-height: 400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.user-profile-content {
+  display: flex;
+  gap: 48px;
+  width: 100%;
+  max-width: 900px;
+  justify-content: flex-start;
+}
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 2px 4px 8px #d3d3d3;
+  padding: 32px 32px 32px 32px;
+  min-width: 320px;
+  min-height: 280px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-edit-icon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  cursor: pointer;
+}
+.profile-avatar {
+  background: #e5e5e5;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.profile-info {
+  text-align: left;
+  font-size: 18px;
+  margin-top: 8px;
+  font-family: 'Sanchez', serif;
+}
+.feedback-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 2px 4px 8px #d3d3d3;
+  padding: 24px 32px 32px 32px;
+  min-width: 320px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-family: 'Sanchez', serif;
+}
+.feedback-textarea {
+  width: 100%;
+  min-height: 32px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  margin-bottom: 12px;
+  padding: 6px;
+  font-size: 16px;
+  resize: none;
+  background: #e5e5e5;
+  font-family: 'Sanchez', serif;
+}
+.feedback-stars {
+  margin-bottom: 16px;
+}
+.feedback-stars .star {
+  font-size: 28px;
+  color: #bbb;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.feedback-stars .star.filled {
+  color: #ffd700;
+}
+.feedback-submit {
+  background: #3ed6c2;
+  color: #222;
+  border: none;
+  border-radius: 16px;
+  font-size: 18px;
+  font-family: 'Sanchez', serif;
+  font-weight: 500;
+  padding: 8px 32px;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background 0.2s;
+}
+.feedback-submit:hover {
+  background: #2ccab2;
+} 

@@ -1,0 +1,239 @@
+/* MyTicket.css */
+
+.main-title {
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Sanchez', serif;
+  font-weight: 400;
+  margin-top: 32px;
+  margin-bottom: 18px;
+}
+
+.ticket-controls {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 10px;
+  margin-left: 24px;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  height: 32px;
+  width: 160px;
+  border-radius: 7px;
+  border: none;
+  background: #eaeaea;
+  font-size: 18px;
+  font-family: 'Sanchez', serif;
+  padding: 0 36px 0 12px;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 22px;
+  color: #444;
+  pointer-events: none;
+}
+
+.entries-control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Sanchez', serif;
+  font-size: 16px;
+}
+
+.entries-control select {
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid #888;
+  background: #eaeaea;
+  font-size: 16px;
+  font-family: 'Sanchez', serif;
+  margin: 0 2px;
+  padding: 0 4px;
+}
+
+.ticket-table {
+  margin: 0 auto;
+  width: 95%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: none;
+  overflow-x: auto;
+}
+
+.ticket-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Sanchez', serif;
+  font-size: 18px;
+}
+
+.ticket-table th, .ticket-table td {
+  padding: 8px 0;
+  text-align: center;
+}
+
+.ticket-table th {
+  font-weight: 400;
+  color: #222;
+  background: none;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.ticket-table tr {
+  background: #f5f5f5;
+}
+
+.ticket-table tr:nth-child(even) {
+  background: #eaeaea;
+}
+
+.ticket-link {
+  color: #2d7cff;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.status-badge {
+  display: inline-block;
+  min-width: 90px;
+  padding: 2px 0;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: 'Sanchez', serif;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+.status-in-progress {
+  background: #2ecc40;
+  color: #003300;
+}
+.status-on-hold {
+  background: #183d5c;
+  color: #fff;
+}
+.status-closed {
+  background: #666;
+  color: #fff;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.star {
+  font-size: 22px;
+  color: #bbb;
+  margin: 0 1px;
+}
+.star.filled {
+  color: #ffce31;
+}
+.star.half-filled {
+  color: #ffce31;
+  /* visually same as filled for now */
+}
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 32px 0 32px;
+  font-family: 'Sanchez', serif;
+  font-size: 15px;
+  color: #222;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.pagination button {
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 18px;
+  font-family: 'Sanchez', serif;
+  cursor: pointer;
+  padding: 0 6px;
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+.pagination button.active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.pagination button:disabled {
+  color: #888;
+  cursor: default;
+}
+
+.ticket-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.18);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ticket-modal {
+  background: #fff;
+  border-radius: 4px;
+  min-width: 400px;
+  max-width: 600px;
+  padding: 32px 24px 24px 24px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ticket-modal-title {
+  font-size: 24px;
+  font-family: 'Sanchez', serif;
+  font-weight: 400;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.ticket-modal-content {
+  font-size: 16px;
+  font-family: 'Sanchez', serif;
+  color: #111;
+  width: 100%;
+  margin-bottom: 18px;
+  text-align: left;
+}
+.ticket-modal-close {
+  background: #19d44c;
+  color: #111;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-family: 'Sanchez', serif;
+  font-weight: 400;
+  padding: 6px 38px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  transition: background 0.2s;
+}
+.ticket-modal-close:hover {
+  background: #13b53d;
+} 

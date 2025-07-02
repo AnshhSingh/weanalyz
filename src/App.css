@@ -1,38 +1,260 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.login-page {
   min-height: 100vh;
+  background: #55d6c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.login-container {
+  background: rgba(239, 237, 237, 0.5);
+  padding: 3rem;
+  border-radius: 0;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #060606;
+  text-align: center;
+  margin: 0;
+  line-height: normal;
+}
+
+.subtitle {
+  font-size: 1.875rem;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  margin: 0;
+  line-height: normal;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.input-group {
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-field {
+  width: 100%;
+  height: 73px;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 0 1.5rem;
+  font-size: 1.875rem;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.input-field::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.sign-in-button {
+  width: 321px;
+  height: 71px;
+  background: #03cc17;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1.875rem;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-button:hover {
+  background: #02b014;
+}
+
+.sign-in-button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.sign-up-button {
+  width: 321px;
+  height: 71px;
+  background: #296ef2;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1.875rem;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up-button:hover {
+  background: #1e5cd1;
+}
+
+.sign-up-button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.login-links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.forgot-password-link {
+  background: none;
+  border: none;
+  color: #ea0000;
+  font-size: 1.25rem;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.toggle-mode-link {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 1.875rem;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+}
+
+.toggle-mode-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 2rem 1.5rem;
+    max-width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .input-field {
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .sign-in-button,
+  .sign-up-button {
+    width: 280px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .login-links {
+    gap: 2rem;
+  }
+
+  .toggle-mode-link {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .input-field {
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .sign-in-button,
+  .sign-up-button {
+    width: 240px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .forgot-password-link {
+    font-size: 1rem;
+  }
+
+  .toggle-mode-link {
+    font-size: 1.25rem;
   }
 }

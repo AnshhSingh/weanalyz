@@ -1,0 +1,135 @@
+/* OperationPerformance.css */
+
+.main-title {
+  text-align: left;
+  font-size: 26px;
+  font-family: 'Sanchez', serif;
+  font-weight: 400;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-left: 0;
+}
+
+.performance-container {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+
+.performance-main {
+  flex: 2;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.main-avatar {
+  background: #e5e5e5;
+  border-radius: 16px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-title-name {
+  font-size: 26px;
+  font-family: 'Sanchez', serif;
+  font-weight: 400;
+}
+
+.main-contact {
+  background: #e5e5e5;
+  border-radius: 12px;
+  padding: 10px 24px;
+  font-size: 15px;
+  min-width: 260px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Sanchez', serif;
+}
+
+.main-tickets {
+  background: #e5e5e5;
+  border-radius: 16px;
+  padding: 16px 28px 12px 28px;
+  font-size: 17px;
+  margin-top: 0;
+  min-width: 340px;
+  font-family: 'Sanchez', serif;
+}
+
+.ticket-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+  font-size: 16px;
+}
+.ticket-total {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.ticket-rating {
+  justify-content: flex-end;
+  margin-top: 8px;
+  gap: 8px;
+}
+.star-rating {
+  color: #ffd700;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.performance-list {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.performance-list-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: none;
+}
+.list-avatar {
+  background: #e5e5e5;
+  border-radius: 12px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-name {
+  font-size: 16px;
+  font-family: 'Sanchez', serif;
+  flex: 1;
+}
+.view-details-btn {
+  background: #3ed6c2;
+  color: #222;
+  border: none;
+  border-radius: 16px;
+  font-size: 15px;
+  font-family: 'Sanchez', serif;
+  font-weight: 400;
+  padding: 7px 32px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.view-details-btn:hover {
+  background: #2ccab2;
+} 
