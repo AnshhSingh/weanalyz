@@ -16,9 +16,9 @@ interface LayoutProps {
 }
 
 const defaultSidebarItems: SidebarItem[] = [
-  { path: "/dashboard", icon: "📊", label: "Dashboard" },
-  { path: "/newticket", icon: "🎫", label: "New Ticket" },
-  { path: "/myticket", icon: "📋", label: "My Ticket" },
+  { path: "/dashboard", icon: <img src="/dashboardicon.png" alt="Dashboard" style={{width: 24, height: 24}} />, label: "Dashboard" },
+  { path: "/newticket", icon: <img src="/newticketicon.png" alt="New Ticket" style={{width: 24, height: 24}} />, label: "New Ticket" },
+  { path: "/myticket", icon: <img src="/myticketicon.png" alt="My Ticket" style={{width: 24, height: 24}} />, label: "My Ticket" },
 ];
 
 const Layout: React.FC<LayoutProps> = ({ children, sidebarItems }) => {

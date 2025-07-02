@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Layout from "./Layout";
 import "./MyTicket.css";
+import { supabase } from "../supabaseClient";
 // import "./MyTicket.css";
 
 function MyTicket() {
@@ -8,58 +9,21 @@ function MyTicket() {
   const [entriesCount, setEntriesCount] = useState("10");
   type Ticket = typeof tickets[0];
   const [openTicket, setOpenTicket] = useState<Ticket | null>(null);
+  const [tickets, setTickets] = useState<any[]>([]);
+  // const [loading, setLoading] = useState(true);
 
-  // Sample ticket data
-  const tickets = [
-    {
-      ticketNo: "1234",
-      subject: "Login issue",
-      status: "In Progress",
-      supportBy: "Tech support",
-      date: "13/08/21",
-      rate: 5,
-      name: "",
-      dept: "",
-      title: "",
-      description: "",
-      category: "",
-      type: "",
-      priority: "",
-      attachment: ""
-    },
-    {
-      ticketNo: "1124",
-      subject: "New ticket issue",
-      status: "On hold",
-      supportBy: "Operation Team",
-      date: "14/08/21",
-      rate: 5
-    },
-    {
-      ticketNo: "1224",
-      subject: "New request",
-      status: "Closed",
-      supportBy: "Tech support",
-      date: "13/08/21",
-      rate: 4.5
-    },
-    {
-      ticketNo: "1244",
-      subject: "Ticket submission",
-      status: "In Progress",
-      supportBy: "Operation Team",
-      date: "14/08/21",
-      rate: 5
-    },
-    {
-      ticketNo: "1114",
-      subject: "Login issue",
-      status: "In Progress",
-      supportBy: "Tech support",
-      date: "3/08/21",
-      rate: 5
-    }
-  ];
+  useEffect(() => {
+    const fetchTickets = async () => {
+      const { data, error } = await supabase.from('ticket').select('*');
+      if (error) {
+        alert('Error fetching tickets: ' + error.message);
+      } else {
+        setTickets(data || []);
+      }
+      // setLoading(false);
+    };
+    fetchTickets();
+  }, []);
 
   const getStatusClass = (status: string) => {
     switch (status.toLowerCase()) {

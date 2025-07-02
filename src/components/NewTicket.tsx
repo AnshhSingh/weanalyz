@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Layout from "./Layout";
 import "./NewTicket.css";
+import { supabase } from "../supabaseClient";
 // import "./NewTicket.css";
 
 function NewTicket() {
@@ -16,11 +17,15 @@ function NewTicket() {
     priority: "medium",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("New ticket created:", formData);
-    // Redirect to dashboard after creating ticket
-    // You may want to use useNavigate here if needed
+    const { error } = await supabase.from('ticket').insert([formData]);
+    if (error) {
+      alert('Error creating ticket: ' + error.message);
+    } else {
+      alert('Ticket created!');
+      // Optionally reset form or redirect
+    }
   };
 
   const handleInputChange = (

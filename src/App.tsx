@@ -24,33 +24,32 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import SignUp from "./components/SignUp";
 import ForgotPassword from "./components/ForgotPassword";
 import "./App.css";
-import { FaTachometerAlt, FaDatabase, FaCog, FaHistory, FaTicketAlt, FaClipboardList, FaChartLine } from "react-icons/fa";
 
 function App() {
   const adminSidebar = [
-    { path: "/admin/dashboard", icon: <FaTachometerAlt />, label: "Dashboard" },
-    { path: "/admin/database", icon: <FaDatabase />, label: "Database", dropdownItems: [
+    { path: "/admin/dashboard", icon: <img src="/dashboardicon.png" alt="Dashboard" style={{width: 24, height: 24}} />, label: "Dashboard" },
+    { path: "/admin/database", icon: <img src="/databaseicon.png" alt="Database" style={{width: 24, height: 24}} />, label: "Database", dropdownItems: [
       { label: "User Database", path: "/admin/database/user" },
       { label: "Ticket Database", path: "/admin/database/ticket" },
     ] },
-    { path: "/admin/setting", icon: <FaCog />, label: "Setting" },
-    { path: "/admin/user-log-history", icon: <FaHistory />, label: "User Log History" },
+    { path: "/admin/setting", icon: <img src="/settingicon.png" alt="Setting" style={{width: 24, height: 24}} />, label: "Setting" },
+    { path: "/admin/user-log-history", icon: <img src="/userlogicon.png" alt="User Log History" style={{width: 24, height: 24}} />, label: "User Log History" },
   ];
   const organizerSidebar = [
-    { path: "/operation/dashboard", icon: <FaTachometerAlt />, label: "Dashboard" },
-    { path: "/operation/ticket-approval", icon: <FaTicketAlt />, label: "Ticket Approval" },
-    { path: "/operation/myticket", icon: <FaClipboardList />, label: "My Ticket" },
-    { path: "/operation/performance", icon: <FaChartLine />, label: "Performance" },
+    { path: "/operation/dashboard", icon: <img src="/dashboardicon.png" alt="Dashboard" style={{width: 24, height: 24}} />, label: "Dashboard" },
+    { path: "/operation/ticket-approval", icon: <img src="/ticketapprovalicon.png" alt="Ticket Approval" style={{width: 24, height: 24}} />, label: "Ticket Approval" },
+    { path: "/operation/myticket", icon: <img src="/myticketicon.png" alt="My Ticket" style={{width: 24, height: 24}} />, label: "My Ticket" },
+    { path: "/operation/performance", icon: <img src="/performanceicon.png" alt="Performance" style={{width: 24, height: 24}} />, label: "Performance" },
   ];
   const technicalSidebar = [
-    { path: "/technical/dashboard", icon: <FaTachometerAlt />, label: "Dashboard" },
-    { path: "/technical/myticket", icon: <FaClipboardList />, label: "My Ticket" },
-    { path: "/technical/performance", icon: <FaChartLine />, label: "Performance" },
+    { path: "/technical/dashboard", icon: <img src="/dashboardicon.png" alt="Dashboard" style={{width: 24, height: 24}} />, label: "Dashboard" },
+    { path: "/technical/myticket", icon: <img src="/myticketicon.png" alt="My Ticket" style={{width: 24, height: 24}} />, label: "My Ticket" },
+    { path: "/technical/performance", icon: <img src="/performanceicon.png" alt="Performance" style={{width: 24, height: 24}} />, label: "Performance" },
   ];
   const userSidebar = [
-    { path: "/dashboard", icon: "📊", label: "Dashboard" },
-    { path: "/newticket", icon: "🎫", label: "New Ticket" },
-    { path: "/myticket", icon: "📋", label: "My Ticket" },
+    { path: "/dashboard", icon: <img src="/dashboardicon.png" alt="Dashboard" style={{width: 24, height: 24}} />, label: "Dashboard" },
+    { path: "/newticket", icon: <img src="/newticketicon.png" alt="New Ticket" style={{width: 24, height: 24}} />, label: "New Ticket" },
+    { path: "/myticket", icon: <img src="/myticketicon.png" alt="My Ticket" style={{width: 24, height: 24}} />, label: "My Ticket" },
   ];
 
   return (
